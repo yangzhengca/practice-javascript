@@ -18,20 +18,30 @@ Mutants name separated by *
 */
 
 var mutants=['Professor X','Cyclops','Iceman','Angel','Beast','Phoenix'];
-var sortMutants=mutants.sort();//??????
-var reverseMutants=mutants.reverse();//??????
+var sortMutants=mutants.sort();//??????no difference
+var reverseMutants=mutants.reverse();//??????no difference
 console.log(mutants);
 console.log(sortMutants);
 console.log(reverseMutants);
-let sepMutants='';
-for(let i=0;i<mutants.length;i++){
-    sepMutants=sepMutants+mutants[i]+'*';
-}
-sepMutants=sepMutants.substr(0,sepMutants.length-1);
-console.log(sepMutants);
+// let sepMutants='';
+// for(let i=0;i<mutants.length;i++){
+//     sepMutants=sepMutants+mutants[i]+'*';
+// }
+// sepMutants=sepMutants.substr(0,sepMutants.length-1);
+// console.log(sepMutants);
+
+var joinMutants=mutants.join('*');
+console.log(joinMutants);
+
+// [ 'Professor X', 'Phoenix', 'Iceman', 'Cyclops', 'Beast', 'Angel' ]
+// [ 'Professor X', 'Phoenix', 'Iceman', 'Cyclops', 'Beast', 'Angel' ]
+// [ 'Professor X', 'Phoenix', 'Iceman', 'Cyclops', 'Beast', 'Angel' ]
+// Professor X*Phoenix*Iceman*Cyclops*Beast*Angel
+
+
 
 
 // [ 'Professor X', 'Phoenix', 'Iceman', 'Cyclops', 'Beast', 'Angel' ]
 // [ 'Professor X', 'Phoenix', 'Iceman', 'Cyclops', 'Beast', 'Angel' ]
 // [ 'Professor X', 'Phoenix', 'Iceman', 'Cyclops', 'Beast', 'Angel' ]
-// Professor X*Phoenix*Iceman*Cyclops*Beast*Angel*
+// Professor X*Phoenix*Iceman*Cyclops*Beast*Angel
