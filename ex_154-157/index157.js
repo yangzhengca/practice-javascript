@@ -90,13 +90,23 @@ games=[{
     }
 ];
 
-var gamesPs4=[];
 
-var gamesPs4=games.filter(function(){
-    for(let i=0;i<games.length;i++){
-        if(games[i].console=='PS4'){
-            return games[i];}}}
-            
-    );
+var gamesPs4=games.filter(function(array1){
+    return array1.console===consoles;  
+});
 
 console.log(gamesPs4);
+
+
+
+// [
+//     { name: 'Crash Bandicoot N. Sane Trilogy', price: 1060, sold: 20, console: 'PS4'},
+//     { name: 'Gta V', price: 1449, sold: 30, console: 'PS4' },
+//     { name: 'Mortal Kombat Xl', price: 1190, sold: 34, console: 'PS4' },
+//     { name: 'Fifa 2017', price: 890, sold: 15, console: 'PS4' },
+//     { name: 'Uncharted 4', price: 950, sold: 30, console: 'PS4' },
+//     { name: 'Need For Speed', price: 790, sold: 10, console: 'PS4' },
+//     { name: 'Lego Batman', price: 1000, sold: 18, console: 'PS4' },
+//     { name: 'Fifa 17', price: 1290, sold: 12, console: 'PS4' },
+//     { name: 'Resident Evil 7', price: 1390, sold: 10, console: 'PS4' }
+// ]
