@@ -19,9 +19,9 @@ Mutants name separated by *
 
 var mutants=['Professor X','Cyclops','Iceman','Angel','Beast','Phoenix'];
 console.log(mutants.join('*'));
-var sortMutants=mutants.sort();
+mutants.sort();
 console.log(mutants.join('*'));
-var reverseMutants=mutants.reverse();
+mutants.reverse();
 console.log(mutants.join('*'));
 
 //note:array.sort() and array.reverse() change the original array
